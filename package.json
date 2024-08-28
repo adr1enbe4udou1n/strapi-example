@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
+  "packageManager": "npm@10.0.0",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
