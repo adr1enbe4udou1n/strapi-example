@@ -28,11 +28,11 @@ module.exports = ({ env }) => {
     },
     mysql2: {
       connection: {
-        host: env('DATABASE_HOST', 'localhost'),
-        port: env.int('DATABASE_PORT', 3306),
-        database: env('DATABASE_NAME', 'strapi'),
-        user: env('DATABASE_USERNAME', 'strapi'),
-        password: env('DATABASE_PASSWORD', 'strapi'),
+        host: env('MYSQL_ADDON_HOST', 'localhost'),
+        port: env.int('MYSQL_ADDON_PORT', 3306),
+        database: env('MYSQL_ADDON_DB', 'strapi'),
+        user: env('MYSQL_ADDON_USER', 'strapi'),
+        password: env('MYSQL_ADDON_PASSWORD', 'strapi'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
