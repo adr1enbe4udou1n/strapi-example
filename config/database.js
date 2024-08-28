@@ -28,7 +28,6 @@ module.exports = ({ env }) => {
     },
     mysql2: {
       connection: {
-        connectionString: env('DATABASE_URL'),
         host: env('MYSQL_ADDON_HOST', 'localhost'),
         port: env.int('MYSQL_ADDON_PORT', 3306),
         database: env('MYSQL_ADDON_DB', 'strapi'),
