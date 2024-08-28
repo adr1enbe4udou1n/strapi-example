@@ -1,0 +1,13 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: strapi
+      MYSQL_USER: strapi
+      MYSQL_PASSWORD: strapi
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
